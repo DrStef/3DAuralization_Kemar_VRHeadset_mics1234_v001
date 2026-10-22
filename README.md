@@ -1,9 +1,15 @@
-# KEMAR + AR Glasses — Multi-microphone Auralization & Beamforming Dataset
+<div align="center">
+<h1>KEMAR + AR Glasses — Multi-microphone Auralization Dataset</h1>
+</div>
+<br>
 
 **Dr. Stéphane Dedieu**  
-Applied Mathematics | Digital Signal Processing | ML
+Applied Mathematics | Digital Signal Processing | ML  
+October 2026  
 
-October 2026
+<a href="https://www.linkedin.com/in/sdedieu/">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="30" height="30">
+</a>
 
 **Open dataset of 6-microphone (3+3) mixtures for AR glasses, generated with Mesh2HRTF BEM transfer functions.**
 
