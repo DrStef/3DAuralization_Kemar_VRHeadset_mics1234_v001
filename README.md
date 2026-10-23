@@ -64,6 +64,28 @@ Coordinates in metres (origin between the ears, +x forward, +y left, +z up).
 
 Users can freely select any 4 microphones for a 2+2 configuration.
 
+## Ambient noise — Binaural recordings projected onto the microphones
+
+Realistic ambient noise is obtained by taking free binaural street recordings and projecting them onto the 6 microphone positions of the KEMAR + VR headset model using the Mesh2HRTF BEM transfer functions.
+
+Four free binaural recordings have been selected:
+
+- [Hong Kong busy street (binaural)](https://freesound.org/people/kevp888/sounds/465660/)  
+  Traffic, pedestrians, and typical city noise. Recorded with Ohrwurm 3D binaural microphones.
+
+- [Hong Kong street (binaural)](https://freesound.org/people/kevp888/sounds/465659/)  
+  Slightly quieter version of the same street scene.
+
+- [Westside Highway, New York (binaural)](https://freesound.org/people/overmedium/sounds/652764/)  
+  Immersive walk along a New York parkway. Good spatial contrast between traffic and open space.
+
+- [Residential road traffic (binaural)](https://freesound.org/people/KVV_Audio/sounds/784795/)  
+  Suburban traffic with distant city hum. Recorded with a Zoom H3-VR.
+
+These recordings are auralized onto the 6-microphone array. Users can then select any 4 microphones (2+2) according to their own hardware configuration.
+
+
+
 ## How to use
 
 1. Download the mixtures.
