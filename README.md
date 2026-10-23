@@ -60,9 +60,22 @@ Coordinates in metres (origin between the ears, +x forward, +y left, +z up).
 | 5 | Right | 0.075  |   0.097   |    0.04625 |
 | 6 | Right | 0.05   |   0.097   |    0.04625 |
 
-
-
 Users can freely select any 4 microphones for a 2+2 configuration.
+
+## Generalized Sidelobe Canceller
+
+In this planar (3+3) configuration, more advanced algorithms can be implemented more flexibly than with a pure linear array. In particular, a Generalized Sidelobe Canceller (GSC) becomes easier to design and control.
+
+The planar layout also allows better cancellation of noise coming from different directions. We will show a reconstruction example on a speech + background noise mixture.
+
+Within the design of the GSC, we create multi-microphone mixtures. The GSC itself produces two channels (speech and noise) that are made as orthogonal as possible. The noise channel is then subtracted from the speech channel with an appropriate gain.
+
+
+**Note:** In addition, the planar geometry enables Sound Source Localization (SSL). This topic is outside the scope of the present repository.
+
+
+
+
 
 ## Ambient noise — Binaural recordings projected onto the microphones
 
