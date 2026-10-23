@@ -105,7 +105,6 @@ These recordings are auralized onto the 6-microphone array. Users can then selec
 2. Choose the microphone subset that matches your AR glasses.
 3. Apply your beamformer or 2-channel noise reduction.
 
-## Acknowledgements
 
 ## Acknowledgements
 
