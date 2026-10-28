@@ -35,6 +35,20 @@ Physics-Informed U-Net (2-channel) models that take advantage of the spatially o
 All data generation, beamforming, and model training remain under the control of the user.
 No cloud dependency, no proprietary black-box simulation engine.The goal is a transparent, reproducible, and affordable pipeline that researchers and small teams can run on their own hardware, while still achieving competitive noise reduction performance for wearable devices
 
+---
+
+Strategy: Open Local Pipeline for Wearable Multi-Microphone Noise ReductionThis repository provides an open, local alternative to cloud-based acoustic simulation platforms.Workflow:You provide your microphone array configuration (positions, headset/glasses geometry).
+We generate the corresponding BEM transfer functions (Mesh2HRTF) and multi-microphone mixtures (speech + realistic ambient noise projected from binaural recordings).
+You validate the simulations against your own measurements if desired.
+You receive ready-to-use multi-channel datasets (multiple SNRs, source directions) to train your models.
+
+All simulation and data generation can be run locally.
+No cloud dependency.The open datasets are designed for:Classical beamforming (MVDR, LCMV)
+Pseudo-GSC (orthogonal speech + noise channels)
+Physics-Informed U-Net (2-channel) and other multi-microphone neural noise reduction models
+
+Target applications: VR/AR headsets, smart glasses, and other wearable microphone arrays.Everything is transparent, reproducible, and under your control.
+
 
 
 
