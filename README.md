@@ -24,6 +24,32 @@ Users can select any 4 microphones (2+2) according to their hardware layout.
 
 ---
 
+Strategy: Local, Open, Physics-Informed Multi-Microphone Noise ReductionThis repository develops a local, open-source alternative to cloud-based acoustic simulation and synthetic data platforms (e.g. Treble) for multi-microphone speech enhancement on wearables (VR/AR headsets, smart glasses).Instead of relying on proprietary cloud services, we generate realistic multi-microphone mixtures locally using:High-fidelity Boundary Element Method (BEM) transfer functions computed with Mesh2HRTF on a public KEMAR + VR/AR headset mesh
+Binaural ambient recordings projected onto the microphone array (3+3 configuration)
+Clean speech rendered at controlled directions and distances
+
+The resulting open datasets (speech + noise at multiple SNRs) are designed for research and development of:Classical spatial filtering (MVDR, LCMV)
+Pseudo-GSC architectures with orthogonal speech and noise channels
+Physics-Informed U-Net (2-channel) models that take advantage of the spatially orthogonalized channels while incorporating acoustic constraints
+
+All data generation, beamforming, and model training remain under the control of the user.
+No cloud dependency, no proprietary black-box simulation engine.The goal is a transparent, reproducible, and affordable pipeline that researchers and small teams can run on their own hardware, while still achieving competitive noise reduction performance for wearable devices
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
 ## Overview
 
 This dataset provides realistic multi-microphone mixtures for research on wearable audio (AR glasses / VR headsets).
