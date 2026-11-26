@@ -45,6 +45,17 @@ The resulting open datasets (speech + noise at multiple SNRs) are designed for r
 All data generation, beamforming, and model training remain under the control of the user.  
 **No cloud dependency, no proprietary black-box simulation engine.**
 
+
+<div align="center">
+<div style="text-align: center;">
+<img src="pictures/BEM_model_mics1234_left.png" alt="BEM Kemar+VR headset" width="70%" style="border:1px solid #ccc; border-radius:8px; padding:5px;">
+</div>
+<div style="text-align: center;">
+<i>Figure 1:  Kemar+VR Headset - Boundary Element Model (BEM) - Microphone array 1234 on the left side .</i>
+</div>
+</div>
+
+
 ---
 
 ### Data Augmentation
@@ -70,14 +81,6 @@ The data augmentation approach for rotating the 3D field is currently under deve
 Everything is transparent, reproducible, and under your control.
 
 
-
-
-
-
-
-
-
-
 ---
 
 ## Overview
@@ -91,6 +94,32 @@ This dataset provides realistic multi-microphone mixtures for research on wearab
 - Users can freely choose a 3 microphone subset
 
 The underlying acoustic model is the same KEMAR + headset mesh used in the companion repository.
+
+
+
+##  Illustration
+
+
+
+<br>
+<div align="center">
+
+|<p align="center"><img src="https://github.com/DrStef/Acoustic_Beamforming_with_mesh2HRTF/blob/main/pictures/array51_kemar_VR_headset_pboundary_mics4.png" align="right" width="250px"/></p> |<p align="center"><img src="https://github.com/DrStef/Acoustic_Beamforming_with_mesh2HRTF/blob/main/pictures/array51_kemar_VR_headset_Beam3D_1kHz.png" align="right"  width="250px"/></p> |<p align="center"><img src="https://github.com/DrStef/Acoustic_Beamforming_with_mesh2HRTF/blob/main/pictures/array51_kemar_VR_headset_PlanarDirectivity.png"  align="right"  width="220px"/></p>|
+|:------:|:------:|:------:|
+|<p align="center"> <sub> <i> Boundary pressure (reciprocity) <br> Microphone 4 at 4 kHz </i> </sub> </p>| <p align="center"> <sub> <i> MVDR Beamforming  <br> 3D Beampattern - 1 kHz </i> </sub> </p>|<p align="center"> <sub> <i> Directivity v. Frequency <br> Horizontal Plane z=0  </i> </sub> </p>|
+
+</ul></ul>
+
+</div>
+
+
+
+
+
+
+
+
+
 
 ---
 ## Contents
