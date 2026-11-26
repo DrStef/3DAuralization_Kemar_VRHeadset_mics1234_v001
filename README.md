@@ -173,9 +173,9 @@ In acoustics, reciprocity states that the transfer function between a source and
 A beamformer (such as the MVDR) can be seen as a directional emitter whose gain is increased in the look direction. The wavefronts remain the same; only the directional gain changes.
 
 This is why the illustrations below show:
-Clip 1: a single microphone as an omnidirectional source
-Clip 2: the MVDR beamformer as a directional source with higher gain toward the talker
-Clip 3: the pseudo-GSC preserves the directional pattern of the MVDR source and adds a non-spatial noise-reduction gain in the time or frequency domain.
+**Clip 1**: a single microphone as an omnidirectional source <br>
+**Clip 2**: the MVDR beamformer as a directional source with higher gain toward the talker <br> 
+**Clip 3**: the pseudo-GSC preserves the directional pattern of the MVDR source and adds a non-spatial noise-reduction gain in the time or frequency domain.
 
 
 <br>
