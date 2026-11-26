@@ -94,15 +94,19 @@ Users can freely select any 3 microphones configuration.
 
 ###  Principle 
 
-On the BEM mesh of the KEMAR + VR headset, the boundary elements corresponding to the eardrums of both ears were used. A velocity boundary condition was applied on these elements and normalized by the eardrum surface area.Transfer functions were then computed from the left ear and the right ear to microphones 1, 2, 3 and 4.
+On the BEM mesh of the KEMAR + VR headset, the boundary elements corresponding to the eardrums of both ears were used. A velocity boundary condition was applied on these elements and normalized by the eardrum surface area.
+
+Transfer functions were then computed from the left ear and the right ear to microphones 1, 2, 3 and 4.
 
 These transfer functions allow a binaural ambient recording to be projected onto the four microphones of the array. Once the ambient noise has been auralized on the array, clean speech can be added and mixed at the desired SNR.
 
 
 ###  Transfer functions - Left ear, Right ear to array microphones 1,2,3,4
 
-The figure below shows the magnitude of the transfer functions between the right ear, the left ear, and the four microphones of the array.Given the proximity of the microphones, the left ear is dominant, and therefore so is the left channel of the binaural recording.
-Above 1 kHz, the head-shadow effect strongly attenuates the contribution of the right ear (and thus the right channel of any binaural recording).
+The figure below shows the magnitude of the transfer functions between the right ear, the left ear, and the four microphones of the array.
+
+Given the proximity of the microphones, the right ear is dominant, and therefore so is the right channel of the binaural recording.
+Above 1 kHz, the head-shadow effect strongly attenuates the contribution of the left ear (and thus the left channel of any binaural recording).
 
 
 <div align="center">
