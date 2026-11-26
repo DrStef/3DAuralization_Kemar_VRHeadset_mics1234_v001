@@ -76,9 +76,9 @@ All data generation, beamforming, and model training remain under the control of
 
 ## Microphone layout 1234
 
-Coordinates in metres (origin between the ears, +x forward, +y left, +z up).
+Coordinates in **metres** (origin between the ears, +x forward, +y left, +z up).
 
-| Mic | Side | x | y | z |
+| Mic | Side | x (m)| y (m)| z (m) |
 |-----|------|---|---|---|
 | 1 | Right  | 0.1    |  -0.097   |    0.04625 |
 | 2 | Right  | 0.075  |  -0.097   |    0.04625 |
