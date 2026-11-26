@@ -91,7 +91,26 @@ Users can freely select any 3 microphones configuration.
 
 ## Ambient noise — Binaural recordings projected onto the microphones
 
-Realistic ambient noise is obtained by taking free binaural street recordings and projecting them onto the 6 microphone positions of the KEMAR + VR headset model using the Mesh2HRTF BEM transfer functions.
+On the BEM mesh of the KEMAR + VR headset, the boundary elements corresponding to the eardrums of both ears were used. A velocity boundary condition was applied on these elements and normalized by the eardrum surface area.Transfer functions were then computed from the left ear and the right ear to microphones 1, 2, 3 and 4.
+
+These transfer functions allow a binaural ambient recording to be projected onto the four microphones of the array. Once the ambient noise has been auralized on the array, clean speech can be added and mixed at the desired SNR.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Realistic ambient noise is obtained by taking free binaural street/restaurant recordings and projecting them onto the 4 microphone positions of the KEMAR + VR headset model using the Mesh2HRTF BEM transfer functions.
 
 Four free binaural recordings have been selected:
 
