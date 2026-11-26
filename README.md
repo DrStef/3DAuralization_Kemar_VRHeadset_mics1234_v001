@@ -114,21 +114,23 @@ The data augmentation approach for rotating the 3D field is currently under deve
 
 ---
 
-## Workflow
 
-1. You provide your microphone array configuration (positions, headset/glasses geometry).
-2. Corresponding BEM transfer functions (Mesh2HRTF) and multi-microphone mixtures are generated (speech + realistic ambient noise projected from binaural recordings).
-3. You can validate the simulations against your own measurements if desired.
-4. You receive ready-to-use multi-channel datasets (multiple SNRs, source directions, rotated scenes) to train your models.
 
-**Target applications:** VR/AR headsets, smart glasses, and other wearable microphone arrays.  
-Everything is transparent, reproducible, and under your control.
+## Microphone layout 1234
 
+Coordinates in metres (origin between the ears, +x forward, +y left, +z up).
+
+| Mic | Side | x | y | z |
+|-----|------|---|---|---|
+| 1 | Left  | 0.1    |  0.097   |    0.04625 |
+| 2 | Left  | 0.075  |  0.097   |    0.04625 |
+| 3 | Left  | 0.05   |  0.097   |    0.04625 |
+| 4 | Left  | 0.025  |  0.097   |    0.04625 |
+
+
+Users can freely select any 3 microphones configuration.
 
 ---
-
-
-
 
 ##  Auralization and Beamforming Illustration
 
@@ -161,39 +163,6 @@ The array geometry and steering vectors come from the open Mesh2HRTF simulation 
 </div>
 
 
-
-
-
-
-
-
-
-
----
-## Contents
-
-- `mixtures/` — 4-channel speech + noise mixtures
-- `metadata/` — Microphone coordinates, source positions, SNR, noise type
-- `README.md` — This file
-
-License: MIT
-
----
-
-## Microphone layout 1234
-
-Coordinates in metres (origin between the ears, +x forward, +y left, +z up).
-
-| Mic | Side | x | y | z |
-|-----|------|---|---|---|
-| 1 | Left  | 0.1    |  0.097   |    0.04625 |
-| 2 | Left  | 0.075  |  0.097   |    0.04625 |
-| 3 | Left  | 0.05   |  0.097   |    0.04625 |
-| 4 | Left  | 0.025  |  0.097   |    0.04625 |
-
-
-Users can freely select any 3 microphones configuration.
-
 ## Generalized Sidelobe Canceller
 
 In this linear end-fire configuration, a Generalized Sidelobe Canceller (GSC) can be implemented to cancel noise coming mainly from the rear (and other non-look directions).The GSC produces two channels (speech and noise) that are made as orthogonal as possible. The noise channel is then subtracted from the speech channel with an appropriate gain.
@@ -203,6 +172,28 @@ While a planar array (e.g. 3+3) would offer more flexibility for ambient noise c
 Within the design of the GSC, we create multi-microphone mixtures. We will show a reconstruction example on a speech + background noise mixture.
 
 
+## Workflow
+
+1. You provide your microphone array configuration (positions, headset/glasses geometry).
+2. Corresponding BEM transfer functions (Mesh2HRTF) and multi-microphone mixtures are generated (speech + realistic ambient noise projected from binaural recordings).
+3. You can validate the simulations against your own measurements if desired.
+4. You receive ready-to-use multi-channel datasets (multiple SNRs, source directions, rotated scenes) to train your models.
+
+**Target applications:** VR/AR headsets, smart glasses, and other wearable microphone arrays.  
+Everything is transparent, reproducible, and under your control.
+
+
+---
+
+## Contents
+
+- `mixtures/` — 4-channel speech + noise mixtures
+- `metadata/` — Microphone coordinates, source positions, SNR, noise type
+- `README.md` — This file
+
+License: MIT
+
+---
 
 
 
