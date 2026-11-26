@@ -211,8 +211,3 @@ Companion repository (mesh + transfer functions):
 [KEMAR-VR_Headset_Acoustic_Beamforming_with_Mesh2HRTF](https://github.com/DrStef/KEMAR-VR_Headset_Acoustic_Beamforming_with_Mesh2HRTF)
 
 Company page: [bloo-audio.com](https://www.bloo-audio.com)
-
-
-Mesh2HRTF / NumCalc team (ARI, TU Berlin).  
-See also the companion repository:  
-[KEMAR-VR_Headset_Acoustic_Beamforming_with_Mesh2HRTF](https://github.com/DrStef/KEMAR-VR_Headset_Acoustic_Beamforming_with_Mesh2HRTF)
