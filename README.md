@@ -167,6 +167,15 @@ In addition to the spatial reduction already performed by the MVDR, an adaptive 
 
 The array geometry and steering vectors come from the open Mesh2HRTF simulation published in the companion repository.
 
+**Important Note**: Reciprocity principle
+
+In acoustics, reciprocity states that the transfer function between a source and a receiver is identical if the roles are reversed.By reciprocity, a single omnidirectional microphone can be seen as an omnidirectional sound source.
+A beamformer (such as the MVDR) can be seen as a directional emitter whose gain is increased in the look direction. The wavefronts remain the same; only the directional gain changes.
+
+This is why the illustrations below show:
+Clip 1: a single microphone as an omnidirectional source
+Clip 2: the MVDR beamformer as a directional source with higher gain toward the talker
+Clip 3: the pseudo-GSC preserves the directional pattern of the MVDR source and adds a non-spatial noise-reduction gain in the time or frequency domain.
 
 
 <br>
