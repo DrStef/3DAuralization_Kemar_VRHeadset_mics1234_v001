@@ -62,37 +62,17 @@ The resulting open datasets (speech + noise at multiple SNRs) are designed for r
 All data generation, beamforming, and model training remain under the control of the user.  
 **No cloud dependency, no proprietary black-box simulation engine.**
 
-
-<div align="center">
-<div style="text-align: center;">
-<img src="pictures/BEM_model_mics1234_right.png" alt="BEM Kemar+VR headset" width="55%" style="border:1px solid #ccc; border-radius:8px; padding:5px;">
-</div>
-<div style="text-align: center;">
-<i>Figure 1:  Kemar+VR Headset - Boundary Element Model (BEM) - Microphone array 1234 on the left side .</i>
-</div>
-</div>
-
-
-
-
-
-
-
 <br>
 <div align="center">
 
-|<p align="center"><img src="pictures/BEM_model_mics1234_right.png" align="right" width="330px"/></p> |<p align="center"><img src="pictures/Target_scenario_v01.png" align="right"  width="330px"/></p> |
+|<p align="center"><img src="pictures/BEM_model_mics1234_right.png" align="right" width="400px"/></p> |<p align="center"><img src="pictures/Target_scenario_v01.png" align="right"  width="600px"/></p> |
 |:------:|:------:|
-|<p align="center"> <sub> <i> Single omnidirectional microphone <br>  Microphone 1 </i> </sub> </p>| <p align="center"> <sub> <i> MVDR Beamforming  <br> Look direction = 0 deg </i> </sub> </p>|
+|<p align="center"> <sub> <i> Kemar+VR Headset - Boundary Element Model (BEM) <br> Microphone array 1234 on the left side .</i> </sub> </p>| <p align="center"> <sub> <i> Target scenario: VR headset capturing speech in a noisy restaurant </i> </sub> </p>|
 </ul></ul>
 
 </div>
 
-
-
-
-
-
+**Note:**  This scenario is better suited to AR glasses + KEMAR. But the BEM processing and auralization procedure remain identical.
 
 ## Microphone layout 1234
 
