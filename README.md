@@ -104,7 +104,7 @@ The underlying acoustic model is the same KEMAR + headset mesh used in the compa
 <br>
 <div align="center">
 
-|<p align="center"><img src="pictures/Scene1_omni_v01.jpg" align="right" width="250px"/></p> |<p align="center"><img src="pictures/Scene2_MVDR_v01.jpg" align="right"  width="250px"/></p> |<p align="center"><img src="pictures/Scene3_GSC_v01.jpg"  align="right"  width="220px"/></p>|
+|<p align="center"><img src="pictures/Scene1_omni_v01.jpg" align="right" width="300px"/></p> |<p align="center"><img src="pictures/Scene2_MVDR_v01.jpg" align="right"  width="300px"/></p> |<p align="center"><img src="pictures/Scene3_GSC_v01.jpg"  align="right"  width="300px"/></p>|
 |:------:|:------:|:------:|
 |<p align="center"> <sub> <i> Boundary pressure (reciprocity) <br> Microphone 4 at 4 kHz </i> </sub> </p>| <p align="center"> <sub> <i> MVDR Beamforming  <br> 3D Beampattern - 1 kHz </i> </sub> </p>|<p align="center"> <sub> <i> Directivity v. Frequency <br> Horizontal Plane z=0  </i> </sub> </p>|
 
