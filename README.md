@@ -119,7 +119,11 @@ Users can freely select any 3 microphones configuration.
 
 ## Generalized Sidelobe Canceller
 
-In this linear end-fire configuration, a Generalized Sidelobe Canceller (GSC) can be implemented to cancel noise coming mainly from the rear (and other non-look directions).The GSC produces two channels (speech and noise) that are made as orthogonal as possible. The noise channel is then subtracted from the speech channel with an appropriate gain.While a planar array (e.g. 3+3) would offer more flexibility for ambient noise cancellation from multiple directions, the end-fire layout remains effective for suppressing noise from behind the array, which is a common case in wearable devices.Within the design of the GSC, we create multi-microphone mixtures. We will show a reconstruction example on a speech + background noise mixture.
+In this linear end-fire configuration, a Generalized Sidelobe Canceller (GSC) can be implemented to cancel noise coming mainly from the rear (and other non-look directions).The GSC produces two channels (speech and noise) that are made as orthogonal as possible. The noise channel is then subtracted from the speech channel with an appropriate gain.
+
+While a planar array (e.g. 3+3) would offer more flexibility for ambient noise cancellation from multiple directions, the end-fire layout remains effective for suppressing noise from behind the array, which is a common case in wearable devices.
+
+Within the design of the GSC, we create multi-microphone mixtures. We will show a reconstruction example on a speech + background noise mixture.
 
 
 ## Ambient noise — Binaural recordings projected onto the microphones
