@@ -11,6 +11,9 @@ November 2026
   <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="30" height="30">
 </a>
 
+<br>
+<br>
+
 **Under construction  26-11-2026**.... 
 
 <br>
