@@ -84,18 +84,18 @@ Everything is transparent, reproducible, and under your control.
 
 This dataset provides realistic multi-microphone mixtures for research on wearable audio (AR glasses / VR headsets).
 
-- 6 microphone positions (3 left + 3 right)
+- 4 microphone positions
 - Clean speech projected from various directions and distances
 - Ambient noise reconstructed from binaural recordings
 - Different SNRs and source positions
-- Users can freely choose a 2+2 subset
+- Users can freely choose a 3 microphone subset
 
 The underlying acoustic model is the same KEMAR + headset mesh used in the companion repository.
 
 ---
 ## Contents
 
-- `mixtures/` — 6-channel speech + noise mixtures
+- `mixtures/` — 4-channel speech + noise mixtures
 - `metadata/` — Microphone coordinates, source positions, SNR, noise type
 - `README.md` — This file
 
@@ -115,21 +115,11 @@ Coordinates in metres (origin between the ears, +x forward, +y left, +z up).
 | 4 | Left  | 0.025  |  -0.097   |    0.04625 |
 
 
-Users can freely select any 4 microphones for a 2+2 configuration.
+Users can freely select any 3 microphones configuration.
 
 ## Generalized Sidelobe Canceller
 
-In this planar (3+3) configuration, more advanced algorithms can be implemented more flexibly than with a pure linear array. In particular, a Generalized Sidelobe Canceller (GSC) becomes easier to design and control.
-
-The planar layout also allows better cancellation of noise coming from different directions. We will show a reconstruction example on a speech + background noise mixture.
-
-Within the design of the GSC, we create multi-microphone mixtures. The GSC itself produces two channels (speech and noise) that are made as orthogonal as possible. The noise channel is then subtracted from the speech channel with an appropriate gain.
-
-
-**Note:** In addition, the planar geometry enables Sound Source Localization (SSL). This topic is outside the scope of the present repository.
-
-
-
+In this linear end-fire configuration, a Generalized Sidelobe Canceller (GSC) can be implemented to cancel noise coming mainly from the rear (and other non-look directions).The GSC produces two channels (speech and noise) that are made as orthogonal as possible. The noise channel is then subtracted from the speech channel with an appropriate gain.While a planar array (e.g. 3+3) would offer more flexibility for ambient noise cancellation from multiple directions, the end-fire layout remains effective for suppressing noise from behind the array, which is a common case in wearable devices.Within the design of the GSC, we create multi-microphone mixtures. We will show a reconstruction example on a speech + background noise mixture.
 
 
 ## Ambient noise — Binaural recordings projected onto the microphones
@@ -150,7 +140,10 @@ Four free binaural recordings have been selected:
 - [Residential road traffic (binaural)](https://freesound.org/people/KVV_Audio/sounds/784795/)  
   Suburban traffic with distant city hum. Recorded with a Zoom H3-VR.
 
-These recordings are auralized onto the 6-microphone array. Users can then select any 4 microphones (2+2) according to their own hardware configuration.
+- [Recording of a small restaurant. (binaural)](https://freesound.org/people/moxobna/sounds/28204/)  
+  People eating and chatting. Close to classic cocktail-party noise.(Microphone model not specified) 
+
+These recordings are auralized onto the 4-microphone array. Users can then select any 3 microphones according to their own hardware configuration.
 
 
 
