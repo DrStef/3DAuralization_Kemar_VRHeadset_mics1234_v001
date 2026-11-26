@@ -156,10 +156,10 @@ Coordinates in metres (origin between the ears, +x forward, +y left, +z up).
 
 | Mic | Side | x | y | z |
 |-----|------|---|---|---|
-| 1 | Left  | 0.1    |  -0.097   |    0.04625 |
-| 2 | Left  | 0.075  |  -0.097   |    0.04625 |
-| 3 | Left  | 0.05   |  -0.097   |    0.04625 |
-| 4 | Left  | 0.025  |  -0.097   |    0.04625 |
+| 1 | Left  | 0.1    |  0.097   |    0.04625 |
+| 2 | Left  | 0.075  |  0.097   |    0.04625 |
+| 3 | Left  | 0.05   |  0.097   |    0.04625 |
+| 4 | Left  | 0.025  |  0.097   |    0.04625 |
 
 
 Users can freely select any 3 microphones configuration.
