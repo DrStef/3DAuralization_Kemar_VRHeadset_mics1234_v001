@@ -65,7 +65,7 @@ All data generation, beamforming, and model training remain under the control of
 <br>
 <div align="center">
 
-|<p align="center"><img src="pictures/BEM_model_mics1234_right.png" align="right" width="400px"/></p> |<p align="center"><img src="pictures/Target_scenario_v01.png" align="right"  width="600px"/></p> |
+|<p align="center"><img src="pictures/BEM_model_mics1234_right.png" align="right" width="300px"/></p> |<p align="center"><img src="pictures/Target_scenario_v01.png" align="right"  width="700px"/></p> |
 |:------:|:------:|
 |<p align="center"> <sub> <i> Kemar+VR Headset - Boundary Element Model (BEM) <br> Microphone array 1234 on the left side .</i> </sub> </p>| <p align="center"> <sub> <i> Target scenario: VR headset capturing speech in a noisy restaurant </i> </sub> </p>|
 </ul></ul>
