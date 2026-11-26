@@ -87,7 +87,6 @@ Coordinates in metres (origin between the ears, +x forward, +y left, +z up).
 
 Users can freely select any 3 microphones configuration.
 
-
 ---
 
 ## Ambient noise — Binaural recordings projected onto the microphones
@@ -123,12 +122,6 @@ The acoustic scene can be rotated in discrete angular steps (e.g. 15° or 30°) 
 This approach multiplies the amount of realistic multi-channel data available for training beamforming or neural enhancement models without requiring new BEM computations.
 
 The data augmentation approach for rotating the 3D field is currently under development. It will not be based on Ambisonics or any other standard spatial audio method, but on a custom technology.
-
----
-
-
-
-
 
 ---
 
