@@ -100,7 +100,7 @@ License: MIT
 
 ---
 
-## Microphone layout (3+3)
+## Microphone layout 1234
 
 Coordinates in metres (origin between the ears, +x forward, +y left, +z up).
 
@@ -109,9 +109,8 @@ Coordinates in metres (origin between the ears, +x forward, +y left, +z up).
 | 1 | Left  | 0.1    |  -0.097   |    0.04625 |
 | 2 | Left  | 0.075  |  -0.097   |    0.04625 |
 | 3 | Left  | 0.05   |  -0.097   |    0.04625 |
-| 4 | Right | 0.1    |   0.097   |    0.04625 |
-| 5 | Right | 0.075  |   0.097   |    0.04625 |
-| 6 | Right | 0.05   |   0.097   |    0.04625 |
+| 4 | Left  | 0.025  |  -0.097   |    0.04625 |
+
 
 Users can freely select any 4 microphones for a 2+2 configuration.
 
