@@ -1,5 +1,5 @@
 <div align="center">
-<h1>KEMAR + VR Headset — Multi-microphone Auralization Dataset</h1>
+<h1>KEMAR + VR Headset <br>  Multi-microphone Auralization Dataset</h1>
 </div>
 <br>
 
