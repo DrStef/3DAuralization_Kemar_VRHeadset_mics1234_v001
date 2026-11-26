@@ -111,10 +111,10 @@ Above 1 kHz, the head-shadow effect strongly attenuates the contribution of the 
 
 <div align="center">
 <div style="text-align: center;">
-<img src="pictures/TFs_OD_OG_mics1234_2511.png" alt="BEM Kemar+VR headset" width="55%" style="border:1px solid #ccc; border-radius:8px; padding:5px;">
+<img src="pictures/TFs_OD_OG_mics1234_2511.png" alt="BEM Kemar+VR headset" width="65%" style="border:1px solid #ccc; border-radius:8px; padding:5px;">
 </div>
 <div style="text-align: center;">
-<i>Figure 3: Transfer functions Left Ear and Rght Ear to microphones 1234 .</i>
+<i> Transfer functions Left Ear and Rght Ear to microphones 1234 <br>  Magnitude only (dB).</i>
 </div>
 </div>
 
