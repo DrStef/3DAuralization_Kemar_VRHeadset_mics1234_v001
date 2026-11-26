@@ -67,7 +67,7 @@ All data generation, beamforming, and model training remain under the control of
 
 |<p align="center"><img src="pictures/BEM_model_mics1234_right.png" align="right" width="300px"/></p> |<p align="center"><img src="pictures/Target_scenario_v01.png" align="right"  width="700px"/></p> |
 |:------:|:------:|
-|<p align="center"> <sub> <i> Kemar+VR Headset - Boundary Element Model (BEM) <br> Microphone array 1234 on the left side .</i> </sub> </p>| <p align="center"> <sub> <i> Target scenario: VR headset capturing speech in a noisy restaurant </i> </sub> </p>|
+|<p align="center"> <sub> <i> Kemar+VR Headset - Boundary Element Model <br> Microphone array 1234 on the right side. </i> </sub> </p>| <p align="center"> <sub> <i> Target scenario: VR headset capturing speech in a noisy restaurant </i> </sub> </p>|
 </ul></ul>
 
 </div>
@@ -80,10 +80,10 @@ Coordinates in metres (origin between the ears, +x forward, +y left, +z up).
 
 | Mic | Side | x | y | z |
 |-----|------|---|---|---|
-| 1 | Left  | 0.1    |  0.097   |    0.04625 |
-| 2 | Left  | 0.075  |  0.097   |    0.04625 |
-| 3 | Left  | 0.05   |  0.097   |    0.04625 |
-| 4 | Left  | 0.025  |  0.097   |    0.04625 |
+| 1 | Right  | 0.1    |  -0.097   |    0.04625 |
+| 2 | Right  | 0.075  |  -0.097   |    0.04625 |
+| 3 | Right  | 0.05   |  -0.097   |    0.04625 |
+| 4 | Right  | 0.025  |  -0.097   |    0.04625 |
 
 
 Users can freely select any 3 microphones configuration.
