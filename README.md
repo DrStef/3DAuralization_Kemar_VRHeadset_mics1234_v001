@@ -29,6 +29,20 @@ Users can also select any subset of microphones according to their hardware layo
 
 ---
 
+## Overview
+
+This dataset provides realistic multi-microphone mixtures for research on wearable audio (AR glasses / VR headsets).
+
+- 4 microphone positions
+- Clean speech projected from various directions and distances
+- Ambient noise reconstructed from binaural recordings
+- Different SNRs and source positions
+- Users can freely choose a 3 microphone subset
+
+The underlying acoustic model is the same KEMAR + headset mesh used in the companion repository.
+
+---
+
 ### Strategy: Local, Open, Physics-Informed Multi-Microphone Noise Reduction
 
 This repository develops a local, open-source alternative to cloud-based acoustic simulation and synthetic data platforms for multi-microphone speech enhancement on wearables (VR/AR headsets, smart glasses).
@@ -59,6 +73,34 @@ All data generation, beamforming, and model training remain under the control of
 </div>
 
 
+
+
+
+---
+
+## Ambient noise — Binaural recordings projected onto the microphones
+
+Realistic ambient noise is obtained by taking free binaural street recordings and projecting them onto the 6 microphone positions of the KEMAR + VR headset model using the Mesh2HRTF BEM transfer functions.
+
+Four free binaural recordings have been selected:
+
+- [Hong Kong busy street (binaural)](https://freesound.org/people/kevp888/sounds/465660/)  
+  Traffic, pedestrians, and typical city noise. Recorded with Ohrwurm 3D binaural microphones.
+
+- [Hong Kong street (binaural)](https://freesound.org/people/kevp888/sounds/465659/)  
+  Slightly quieter version of the same street scene.
+
+- [Westside Highway, New York (binaural)](https://freesound.org/people/overmedium/sounds/652764/)  
+  Immersive walk along a New York parkway. Good spatial contrast between traffic and open space.
+
+- [Residential road traffic (binaural)](https://freesound.org/people/KVV_Audio/sounds/784795/)  
+  Suburban traffic with distant city hum. Recorded with a Zoom H3-VR.
+
+- [Recording of a small restaurant. (binaural)](https://freesound.org/people/moxobna/sounds/28204/)  
+  People eating and chatting. Close to classic cocktail-party noise.(Microphone model not specified) 
+
+These recordings are auralized onto the 4-microphone array. Users can then select any 3 microphones according to their own hardware configuration.
+
 ---
 
 ### Data Augmentation
@@ -69,7 +111,6 @@ The acoustic scene can be rotated in discrete angular steps (e.g. 15° or 30°) 
 This approach multiplies the amount of realistic multi-channel data available for training beamforming or neural enhancement models without requiring new BEM computations.
 
 The data augmentation approach for rotating the 3D field is currently under development. It will not be based on Ambisonics or any other standard spatial audio method, but on a custom technology.
-
 
 ---
 
@@ -86,17 +127,6 @@ Everything is transparent, reproducible, and under your control.
 
 ---
 
-## Overview
-
-This dataset provides realistic multi-microphone mixtures for research on wearable audio (AR glasses / VR headsets).
-
-- 4 microphone positions
-- Clean speech projected from various directions and distances
-- Ambient noise reconstructed from binaural recordings
-- Different SNRs and source positions
-- Users can freely choose a 3 microphone subset
-
-The underlying acoustic model is the same KEMAR + headset mesh used in the companion repository.
 
 
 
@@ -173,28 +203,6 @@ While a planar array (e.g. 3+3) would offer more flexibility for ambient noise c
 Within the design of the GSC, we create multi-microphone mixtures. We will show a reconstruction example on a speech + background noise mixture.
 
 
-## Ambient noise — Binaural recordings projected onto the microphones
-
-Realistic ambient noise is obtained by taking free binaural street recordings and projecting them onto the 6 microphone positions of the KEMAR + VR headset model using the Mesh2HRTF BEM transfer functions.
-
-Four free binaural recordings have been selected:
-
-- [Hong Kong busy street (binaural)](https://freesound.org/people/kevp888/sounds/465660/)  
-  Traffic, pedestrians, and typical city noise. Recorded with Ohrwurm 3D binaural microphones.
-
-- [Hong Kong street (binaural)](https://freesound.org/people/kevp888/sounds/465659/)  
-  Slightly quieter version of the same street scene.
-
-- [Westside Highway, New York (binaural)](https://freesound.org/people/overmedium/sounds/652764/)  
-  Immersive walk along a New York parkway. Good spatial contrast between traffic and open space.
-
-- [Residential road traffic (binaural)](https://freesound.org/people/KVV_Audio/sounds/784795/)  
-  Suburban traffic with distant city hum. Recorded with a Zoom H3-VR.
-
-- [Recording of a small restaurant. (binaural)](https://freesound.org/people/moxobna/sounds/28204/)  
-  People eating and chatting. Close to classic cocktail-party noise.(Microphone model not specified) 
-
-These recordings are auralized onto the 4-microphone array. Users can then select any 3 microphones according to their own hardware configuration.
 
 
 
