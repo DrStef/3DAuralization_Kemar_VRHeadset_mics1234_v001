@@ -48,7 +48,7 @@ All data generation, beamforming, and model training remain under the control of
 
 <div align="center">
 <div style="text-align: center;">
-<img src="pictures/BEM_model_mics1234_left.png" alt="BEM Kemar+VR headset" width="70%" style="border:1px solid #ccc; border-radius:8px; padding:5px;">
+<img src="pictures/BEM_model_mics1234_left.png" alt="BEM Kemar+VR headset" width="55%" style="border:1px solid #ccc; border-radius:8px; padding:5px;">
 </div>
 <div style="text-align: center;">
 <i>Figure 1:  Kemar+VR Headset - Boundary Element Model (BEM) - Microphone array 1234 on the left side .</i>
