@@ -97,7 +97,22 @@ The underlying acoustic model is the same KEMAR + headset mesh used in the compa
 
 
 
-##  Illustration
+##  Auralization and Beamforming Illustration
+
+The video shows a 30-second restaurant scene with progressive noise reduction on a 4-microphone end-fire array mounted on a KEMAR-style head + VR headset.
+
+**0:00 – 0:10 | Raw microphone 1**
+Only microphone 1 is active. Omnidirectional capture: speech + full restaurant noise (cocktail-party type).
+
+**0:10 – 0:20 | Static MVDR beamformer**
+A fixed MVDR beamformer is applied.
+MVDR is a spatial noise reduction method: it amplifies the target voice while attenuating ambient noise coming from other directions, using the BEM-derived transfer functions.
+
+**0:20 – 0:30 | Pseudo-GSC**
+A pseudo-GSC is activated.
+In addition to the spatial reduction already performed by the MVDR, an adaptive noise canceller operates in the time domain (or frequency domain). The residual noise is further reduced while the target voice remains clear.
+
+The array geometry and steering vectors come from the open Mesh2HRTF simulation published in the companion repository.
 
 
 
