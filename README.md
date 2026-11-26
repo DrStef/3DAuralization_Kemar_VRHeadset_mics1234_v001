@@ -73,6 +73,27 @@ All data generation, beamforming, and model training remain under the control of
 </div>
 
 
+
+
+
+
+
+<br>
+<div align="center">
+
+|<p align="center"><img src="pictures/BEM_model_mics1234_right.png" align="right" width="330px"/></p> |<p align="center"><img src="pictures/Target_scenario_v01.png" align="right"  width="330px"/></p> |
+|:------:|:------:|
+|<p align="center"> <sub> <i> Single omnidirectional microphone <br>  Microphone 1 </i> </sub> </p>| <p align="center"> <sub> <i> MVDR Beamforming  <br> Look direction = 0 deg </i> </sub> </p>|
+</ul></ul>
+
+</div>
+
+
+
+
+
+
+
 ## Microphone layout 1234
 
 Coordinates in metres (origin between the ears, +x forward, +y left, +z up).
